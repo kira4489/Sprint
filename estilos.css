@@ -5,15 +5,15 @@
 }
 
 body {
-  background-image: url("./fondo.jpg");
+  background-image: url(./fondo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
- background-position: center;
+  background-position: top center;
   display: flex;
   flex-direction: column;
   max-width: 70%;
   justify-content: center;
-  margin: 100px auto;
+  margin: 20px auto;
 }
 
 header {
@@ -54,17 +54,34 @@ nav ul li a {
   color: white;
 }
 
-article {
+.search-pass{
+  font-size: 30px;
+  color: white;
+}
+
+.article {
   float: left;
   width: 70%;
 }
 
-article hr {
+.article hr {
   height: 2px;
   margin: 20px 0;
   border-width: 0;
   color: black;
   background-color: black;
+}
+
+.article-card{
+  margin-top: 40px;
+  background-color: tomato;
+  padding: 20px;
+}
+
+.flex-d{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .preview {
