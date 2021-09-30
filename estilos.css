@@ -72,14 +72,17 @@ nav ul li a {
   background-color: black;
 }
 
-.article-card{
+.article-card form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 40px;
   background-color: tomato;
   padding: 20px;
 }
 
 .flex-d{
-  display: flex;
+   display: flex;
     align-items: center;
     justify-content: space-between;
 }
