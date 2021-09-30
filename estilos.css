@@ -1,6 +1,81 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: blue;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  justify-content: center;
+  margin: 100px auto;
+}
+
+header {
+  padding: 20px;
+  text-align: left;
+  font-size: 35px;
+  color: white;
+}
+
+header img {
+  width: 100px;
+}
+
+nav {
+  float: left;
+  width: 30%;
+ /*  height: 300px; */
+  margin-top: 80px;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+.board-pass {
+  font-size: 35px;
+  text-align: end;
+  color: white;
+}
+
+article {
+  float: left;
+  width: 70%;
+}
+
+article hr {
+  height: 2px;
+  margin: 20px 0;
+  border-width: 0;
+  color: black;
+  background-color: black;
+}
+
+.preview {
+  margin-top: 30px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
 }
