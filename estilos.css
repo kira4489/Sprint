@@ -8,6 +8,7 @@ body {
   background-image: url("./fondo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+ background-position: center;
   display: flex;
   flex-direction: column;
   max-width: 70%;
@@ -23,7 +24,7 @@ header {
 }
 
 header img {
-  width: 100px;
+  width: 250px;
 }
 
 nav {
@@ -81,5 +82,9 @@ footer {
   article {
     width: 100%;
     height: auto;
+  }
+  body{
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
