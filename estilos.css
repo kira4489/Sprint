@@ -153,7 +153,7 @@ input[type="radio"]:checked:after {
 .article-img {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   gap: 3px;
 }
 
@@ -176,8 +176,9 @@ input[type="radio"]:checked:after {
   background-color: transparent;
 }
 
-.article-input label{
+.article-input label {
   color: white;
+  font-size: 0.9rem;
 }
 
 /* .flex-d{
@@ -190,14 +191,14 @@ input[type="radio"]:checked:after {
   margin-top: 30px;
 }
 
-.develop{
+.develop {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 40px;
 }
 
-.develop img{
+.develop img {
   width: 30%;
   height: 30%;
   padding: 0 20px;
