@@ -189,3 +189,16 @@ input[type="radio"]:checked:after {
 .preview {
   margin-top: 30px;
 }
+
+.develop{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.develop img{
+  width: 30%;
+  height: 30%;
+  padding: 0 20px;
+}
