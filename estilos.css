@@ -198,8 +198,21 @@ input[type="radio"]:checked:after {
   margin-top: 40px;
 }
 
-.develop img {
-  width: 30%;
-  height: 30%;
+.develop figure{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.develop figcaption{
+  color: white;
+  margin-top: 10px;
+}
+
+.develop figure img {
+  width: 70%;
+  height: 40%;
   padding: 0 20px;
 }
+
