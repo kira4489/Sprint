@@ -5,7 +5,7 @@
 }
 
 body{
-  background-image: url('image-reg.jpg'); 
+  background-image: url('../Assets/image-reg.jpg'); 
   background-repeat: no-repeat; 
   background-size: cover; 
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=1 );
@@ -77,7 +77,7 @@ form.login {
 }
 
 .body-home {
-  background-image: url(./fondo.jpg);
+  background-image: url(../Assets/fondo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
