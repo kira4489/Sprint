@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="./estilos.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="body-home">
     <header>
       <img src="./logo.jpg" />
     </header>
 
     <section>
       <div id="nav_drawer">
+        <button class="accordion">Menu</button>
+        <div class="panel">
         <nav>
           <ul>
-            <button id="buttonreg_nav"><a href="#Vuelos">Vuelos</a></button>
+            <button id="button_principal"><a href="#Vuelos">Vuelos</a></button>
             <button id="buttonreg_nav"><a href="#Hoteles">Hoteles</a></button>
             <button id="buttonreg_nav"><a href="#">Paquetes</a></button>
             <button id="buttonreg_nav">
@@ -24,7 +26,19 @@
             </button>
           </ul>
         </nav>
-      </div>
+        </div>
+      <script>var acc = document.getElementsByClassName("accordion");
+        var i;
+            for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function(){
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+            }
+        }
+    </script>
+</button>
+</div>
+
       <div class="article" id="Vuelos">
         <p class="board-pass">Vuelos</p>
         <hr />
