@@ -1,5 +1,7 @@
 function validar_confirmar_correo(string){
-
+ string.preventDefault();
+ var verificar = document.getElementById("#campoConfirmEmail")
+ 
 }
 
 function validar_pais(string){
