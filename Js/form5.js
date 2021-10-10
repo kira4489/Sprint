@@ -4,10 +4,6 @@ var confirmCorreo = document.getElementById("campoConfirmarCorreo")
 let emailValue = ""
 let confirmEmailValue= ""
 
-/* button.addEventListener("click",()=>{
- validar_pais()
-}) */
-
 email.addEventListener("change",(event) => {
   emailValue = event.target.value 
 })
@@ -28,8 +24,15 @@ function validar_confirmar_correo(email,confirmEmail){
 }
 
 function validar_pais(string){
-
+  var validRegex = /[A-Z]+[a-z]+(?:\.[a-z])*$/;
+  if (string.value.match(validRegex)) {
+    alert("Pais valido");
+    document.form1.campoPais.focus();
+    return true;
+  } else {
+    alert("El pais debe iniciar en mayuscula y terminar en minuscula");
+    document.form1.campoPais.focus();
+    return false;
+  }
 }
 
-modules.exports.validar_confirmar_correo = validar_confirmar_correo
-modules.exports.validar_pais = validar_pais
