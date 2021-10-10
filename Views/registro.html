@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../Css/estilos.css" rel="stylesheet" />
+    <title>Registro</title>
+</head>
+
+<body>
+    <form action="php/ingreso.php" method="post" class="login">
+        <!------ <div class="row text-center">--->
+        <div class="col" id="formRegistro">
+            <figure>
+                <img src="./Assets/logo.jpg" width="380">
+            </figure>
+            <div class="col-class">
+                <label for="campoNombre">Nombre</label>
+                <input id="campoNombre" type="text" required="true">
+            </div>
+            <div class="col-class">
+                <label for="campoApellido">Apellido</label>
+                <input id="campoApellido" type="text" required="true">
+            </div>
+            <div class="form-group">
+                <label for="DropdownFormCity">Pais</label>
+                <input type="password" class="form-control" id="DropdownFormCity" placeholder="Colombia" required="true">
+            </div>
+            <div class="form-group">
+                <label for="DropdownFormCity">Ciudad</label>
+                <input type="password" class="form-control" id="DropdownFormCity" placeholder="Cartagena" required="true">
+            </div>
+            <div>
+                <label for="campoEmail">Correo electronico</label>
+                <input id="campoEmail" type="email" required="true">
+            </div>
+            <div>
+                <label for="campoConfirmEmail">Confirmacion correo  electronico</label>
+                <input id="campoConfirmarCorreo" type="email" required="true">
+            </div>
+            <div>
+                <label for="password">Contraseña</label>
+                <input id="login" type="password" required="true">
+            </div>
+            <button>Enviar</button>
+        </div>
+    </form>
+
+    <script src="../Js/form5.js">
+    </script>
+</body>
+</html>

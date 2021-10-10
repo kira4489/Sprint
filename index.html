@@ -1,13 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Css/estilos.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Prueba</h1>
-</body>
+  </head>
+  <body class="body-home">
+    <header>
+      <img src="./Assets/logo.jpg" />
+    </header>
+
+    <section>
+      <div id="nav_drawer">
+        <button class="accordion">Menu</button>
+        <div class="panel">
+        <nav>
+          <ul>
+            <button id="button_principal"><a href="#">Vuelos</a></button>
+            <button id="buttonreg_nav"><a href="#Hoteles">Hoteles</a></button>
+            <button id="buttonreg_nav"><a href="#">Paquetes</a></button>
+            <button id="buttonreg_nav">
+              <a href="./Views/team.html">Desarrolladores</a>
+            </button>
+          </ul>
+        </nav>
+        </div>
+      <script>var acc = document.getElementsByClassName("accordion");
+        var i;
+            for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function(){
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+            }
+        }
+    </script>
+</button>
+</div>
+
+      <div class="article" id="Vuelos">
+        <p class="board-pass">Vuelos</p>
+        <hr />
+        <div class="flex-d">
+          <div class="search-pass">
+            <p>Busca tu vuelo</p>
+            <ul class="search-list">
+              <li><input type="radio" /> <span>Ida y regreso</span></li>
+              <li><input type="radio" /><span>Solo dia</span></li>
+              <li><input type="radio" /><span>Multidestino</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="article-card">
+          <form>
+            <div class="article-card-p">
+              <p>Ciudad de origen</p>
+              <div class="article-img">
+                <figure>
+                  <img src="./Assets/marcador-de-posicion.png" />
+                </figure>
+                <div class="article-input">
+                  <input />
+                  <label>Desde donde viajas</label>
+                </div>
+              </div>
+            </div>
+            <div class="article-card-p">
+              <p>Ciudad de destino</p>
+              <div class="article-img">
+                <figure>
+                  <img src="./Assets/marcador-de-posicion.png" />
+                </figure>
+                <div class="article-input">
+                  <input />
+                  <label>Hacia donde viajas </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="article-card-p">
+              <p>Cantidad de pasajeros</p>
+              <div class="article-img">
+                <figure>
+                  <img src="./Assets/grupo-de-personas.png" />
+                </figure>
+                <div class="article-input">
+                  <input type="number"/>
+                  <label>Numero de pasajeros  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="article-card-p">
+              <p>Fecha de salida</p>
+              <div class="article-img">
+                <figure>
+                  <img src="./Assets/calendario.png" />
+                </figure>
+                <div class="article-input">
+                  <input />
+                  <label>Ida </label>
+                </div>
+              </div>
+            </div>
+            <div class="article-card-p">
+              <p>Fecha de regreso</p>
+              <div class="article-img">
+                <figure>
+                  <img src="./Assets/calendario.png" />
+                </figure>
+                <div class="article-input">
+                  <input />
+                  <label>Vuelta </label>
+                </div>
+              </div>
+            </div>
+            <div class="article-card-p">
+              <p>Clase</p>
+              <div class="article-img">
+                <figure>
+                  <img src="./Assets/copa-con-vino.png" />
+                </figure>
+                <div class="article-input">
+                  <input />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
